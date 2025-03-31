@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js"></script>
+
+   
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .section1 {
+            position: sticky;
+            top: 0px;
+            background-color: #1b2838;
+            z-index: 11;
+
+        }
+
+
+        ul {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        li {
+            color: white;
+
+        }
+
+        .a1 {
+            font-size: 22px;
+        }
+
+        .a2 {
+            font-size: 15.5px;
+        }
+
+        .a3 {
+            /* width: 260px; */
+            /* height: 25px; */
+            background-color: white;
+            border-radius: 7px;
+            padding: 3px 3px;
+
+        }
+
+        .searchbar {
+            border: none;
+            outline: none;
+            width: 240px;
+
+        }
+
+        #button {
+            border: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .section2 {
+            display: none;
+        }
+
+        .dropdown {
+            display: none;
+            border: none;
+            color: white;
+            position: absolute;
+        }
+
+        .a4:hover .dropdown {
+            display: block;
+        }
+
+
+        .section3 {
+            background-image: url(watchss.webp);
+            
+            height: fit-content;
+            background-size: cover;
+            background-blend-mode: color;
+            background-color: rgba(0, 0, 0, 0.404);
+            display: flex;
+            gap: 7%;
+            width: 100%;
+
+
+        }
+
+        .section3>.collection {
+            /* border: 2px solid red; */
+
+            margin-left: 2%;
+            margin-top: 7.5%;
+            justify-content: space-evenly;
+            width: fit-content;
+            display: grid;
+            background-size: cover;
+            grid-template-columns: repeat(4, 1fr);
+            
+
+
+        }
+
+
+        figure {
+
+            width: fit-content;
+            margin: 2%;
+            /* border: 2px solid yellow; */
+
+        }
+
+        figcaption {
+            text-align: center;
+            padding: 2px;
+            color: white;
+        }
+
+        .visible {
+            width: 185px;
+            height: 185px;
+            border-radius: 7px;
+
+        }
+
+        .video {
+            /* border: 2px solid green; */
+            width: fit-content;
+            margin-top: 15%;
+            margin-left: 4%;
+            position: sticky;
+            top: 150px;
+            height: fit-content;
+            z-index: 10;
+            /* bottom: 20px; */
+
+        }
+
+        #max {
+
+            height: 50vh !important;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 5px;
+            color: rgb(155, 191, 216);
+        }
+
+
+        .section4 {
+            width: 100%;
+            height: fit-content;
+            margin: auto;
+            display: flex;
+            background-color: #1b2838;
+            justify-content: space-evenly;
+
+
+        }
+
+        h4 {
+            color: bisque;
+            text-align: center;
+        }
+
+        p {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .section1> ul>.a4>button{
+            padding: 3px;
+            border-radius: 5px;
+            border: none;
+
+        }
+        @media screen and (max-width:768px){
+            * {
+        padding: 0px;
+        margin: 0px;
+    }
+    .a1 {
+        font-size: 13px;
+    }
+    
+    .a2 {
+        font-size: 9px;
+    }
+    
+    .a3 {
+        background-color: white;
+        border-radius: 7px;
+        padding: 3px 3px;
+    }  
+    .searchbar {
+        border: none;
+        outline: none;
+        width: 150px;
+    
+    } 
+     video {margin-left: 6%;}
+    .a4 {
+        /* border: 2px solid red; */
+        padding: 1px 1px;
+    }
+    
+    .section3 {
+        gap: 4%;
+    }
+    
+    .section3>.collection {
+            /* border: 2px solid red; */
+
+            margin-left: 4%;
+            margin-top: 7.5%;
+            justify-content: space-evenly;
+            width: fit-content;
+            display: grid;
+            background-size: cover;
+            grid-template-columns: repeat(2, 1fr);
+            /* gap: 5%; */
+
+
+        }
+        figure{
+            /* border: 2px solid red; */
+            margin: 5px;
+        }
+        figcaption{
+            font-size: 12px;}
+        .visible {
+            width: 165px;
+            height: 165px;
+            border-radius: 7px;}
+          
+ 
+             #footer1
+            {
+
+                margin: 3%;
+            } 
+
+            h4 {
+                color: bisque;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            p {
+                padding: 7px;
+                font-size: 10px;
+            } 
+            #max {
+ 
+ /* height: 40vh !important; */
+width: 40vh;}}
+
+ 
+         @media screen and (max-width:710px) {  
+   
+    .section1> ul>.a4{
+      display: none;
+   }
+   .section3 {
+    gap: 2%;
+   }
+   .visible {
+            width: 145px;
+            height: 145px;
+        }
+        #max {
+ 
+        height: 45vh !important;}
+
+}
+@media screen  and (max-width:640px) {  
+   
+   .a4,#aa2{
+      display: none;
+   }
+figcaption{
+    font-size: 12px;
+}
+#max {
+ 
+ height: 40vh !important;
+width: 35vh;}
+
+}
+
+  
+  
+
+
+        @media screen and (max-width:578px) {
+
+
+            #aa2,
+            .a4 {
+                display: none;
+
+            }
+
+            .section1 {
+                position: sticky;
+                top: 0;
+                background-color: #1b2838;
+            }
+
+            ul {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                list-style-type: none;
+            }
+
+            .a3 {
+                background-color: white;
+                border-radius: 7px;
+                padding: 1px 1px;
+                width: 100px;
+            }
+
+            .searchbar {
+                border: none;
+                outline: none;
+                width: 80px;
+
+            }
+
+            button>.fa-solidfa-magnifying-glass {
+                /* border: none; */
+                width: 30px;
+            }
+
+            .a1 {
+                font-size: 12px;
+            }
+
+            .a2 {
+                font-size: 9px;
+            }
+
+
+
+
+            .section3 {
+                background-image: url(watchss.webp);
+                width: 100%;
+                height: fit-content;
+                background-size: cover;
+                background-blend-mode: color;
+                background-color: rgba(0, 0, 0, 0.404);
+
+            }
+
+            .section3>.collection {
+
+                /* border: 2px solid red; */
+                padding: 20px;
+                margin-left: 7%;
+                margin-top: 7.5%;
+                justify-content: space-evenly;
+                /* width: fit-content; */
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+
+            }
+
+
+
+            figure {
+                /* border: 2px solid yellow;  */
+                margin: 2vh;
+
+            }
+
+            figcaption {
+
+                padding: 2px;
+                color: white;
+                font-size: 10px;
+            }
+
+            .visible {
+                width: 130px;
+                height: 130px;
+                border-radius: 7px;
+
+            }
+
+            .video {
+                display: none;
+            }
+
+
+
+
+
+            .section4 {
+                width: 100%;
+                height: fit-content;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                background-color: #1b2838;
+                justify-content: space-evenly;
+
+
+            }
+
+            #footer1
+            {
+
+                margin: 3%;
+            }
+
+            h4 {
+                color: bisque;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            p {
+                padding: 7px;
+                font-size: 10px;
+            } 
+        }
+
+
+
+        @media screen and (max-width:520px) {
+            .a1 {
+                font-size: 11px;
+            }
+
+            .a2 {
+                font-size: 8px;
+            }
+
+
+         
+            .section3>.collection {
+                margin-top: 6.5%;
+                margin-left: 2%;
+            }
+        }
+
+        @media screen and (max-width:545px) {
+            .section3>.collection {
+                margin-top: 6.5%;
+                margin-left: 1.5%;
+            }
+
+            figure {
+
+                width: fit-content;
+                margin: 1vh;
+                /* border: 2px solid yellow; */
+
+            }
+
+
+        }
+
+        @media screen and (max-width:455px) {
+            .a1 {
+                font-size: 10px;
+            }
+
+            .a2 {
+                font-size: 7.5px;
+            }
+
+            .section3>.collection {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 15px;
+                margin-top: 9.5%;
+                justify-content: space-evenly;
+            }
+
+            figure {
+                /* border: 2px solid yellow; */
+                margin: 1vh;
+            }
+
+
+           .visible {
+                width: 145px;
+                height: 145px;
+            }
+
+         
+        }
+
+        @media screen and (max-width:425px) {
+
+            
+            span {
+                display: none;
+            }
+
+         
+       
+
+        }
+
+
+        @media screen and (max-width:390px)
+         {
+              .section1>ul>#account{
+                        display: none;
+                    }
+          
+
+
+            .visible {
+                width: 130px;
+                height: 130px;
+            }
+
+            figure {
+                /* border: 2px solid yellow; */
+                margin: 1vh;
+            }
+
+            .section3>.collection {
+
+                padding: 10px;
+                margin-left: 5.5%;
+                margin-top: 9.5%;
+                justify-content: space-evenly;
+
+            }
+        }
+    </style>
+</head>
+
+<body class="proper">
+    <section class="section1">
+        <ul>
+            <a href="index.html">
+                <li class="a1"><span> ✧✦</span> 𝐋𝐔𝐗𝐔𝐑𝐘 𝑾𝑨𝑻𝑪𝑯𝑬𝑺 <span>✦✧</span> </li>
+            </a>
+
+
+            <li class="a2" id="account"> <i class="fa-solid fa-user-plus"></i> ACCOUNT</li>
+            <!-- placeholder="luxury watches.com" -->
+
+            <li class="a3"> <input type="text" class=searchbar id="searchInput"><button onclick="sakthi()"
+                    style="border: none;"><i class="fa-solid fa-magnifying-glass" id="button">
+                    </i></button></li>
+         
+            <li class="a2" id="aa2"> <i class="fa-solid fa-magnifying-glass-location"></i> LOCATION </li>
+
+            <li class="a4"><button>EN-English</button>
+                <div class="dropdown">
+                    <br>
+                    <dt>TAMIL</dt>
+                    <hr><br>
+                    <dt>HINDHI</dt>
+                    <hr><br>
+                    <dt>TELUGU</dt>
+                    <hr><br>
+                </div>
+
+
+
+            <li class="a2"><i class="fa-solid fa-cart-shopping"></i> RETURNS & ORDERS</li>
+
+          
+
+
+        </ul>
+
+    </section>
+
+    <section class="section3">
+        <div class="collection">
+
+            <figure>
+                <a href="loginpage.html"> <img class="visible" src="watch1.img"><br>
+                    <figcaption>VINTAGE MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,00,000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch2.img"><br>
+                    <figcaption>TRANSPARENT MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,30,000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch3.jpeg"><br>
+                    <figcaption>VINTAGE MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,20,000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch4.jpg"><br>
+                    <figcaption> HIGH TEMPATURE MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,50,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch6.jpg"><br>
+                    <figcaption>CUSTOMIES MODEL</figcaption>
+                    <figcaption> &#x20B9; 10,00,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch7.jpeg"><br>
+                    <figcaption>PLUS MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,000,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch8.jpeg"><br>
+                    <figcaption> ULTRA PLUS MODEL</figcaption>
+                    <figcaption> &#x20B9;5,000,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch11.jpg"><br>
+                    <figcaption>MICRO DIAMOND WATCH</figcaption>
+                    <figcaption> &#x20B9;10,000,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch12.webp"><br>
+                    <figcaption> CASUAL MODEL </figcaption>
+                    <figcaption> &#x20B9; 50,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch13.jpg"><br>
+                    <figcaption> SPORTS MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,00,000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch15bulgari.jpg"><br>
+                    <figcaption> CUSTOMIES MODEL</figcaption>
+                    <figcaption> &#x20B9; 10,000,000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch16.avif"><br>
+                    <figcaption>BUGATTI MODEL</figcaption>
+                    <figcaption> &#x20B9; 11,000,0000 </figcaption>
+                </a>
+            </figure>
+
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch4.jpg"><br>
+                    <figcaption> HIGH TEMPATURE MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,50,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch6.jpg"><br>
+                    <figcaption>CUSTOMIES MODEL</figcaption>
+                    <figcaption> &#x20B9; 10,00,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch7.jpeg"><br>
+                    <figcaption>PLUS MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,000,0000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch2.img"><br>
+                    <figcaption>TRANSPARENT MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,30,000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch3.jpeg"><br>
+                    <figcaption>VINTAGE MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,20,000 </figcaption>
+                </a>
+            </figure>
+            <figure> <a href="loginpage.html">
+                    <img class="visible" src="watch4.jpg"><br>
+                    <figcaption> HIGH TEMPATURE MODEL</figcaption>
+                    <figcaption> &#x20B9; 1,50,0000 </figcaption>
+                </a>
+            </figure>
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="video">
+            <a href="loginpage.html">
+                <img id="max" src="parts watch.jpg"></a>
+
+        </div>
+
+    </section>
+    <section class="section4">
+        <div class="footer" id="footer1">
+            <p>
+            <h4>GET TO KNOW US</h4>
+            </p>
+            <p>About your company</p>
+            <p>Careers</p>
+            <p>Services & Replacements</p>
+        </div>
+        <div class="footer" id="footer1">
+            <p>
+            <h4>FOLLOW US</h4>
+            </p>
+            <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+            <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+            <p><i class="fa-brands fa-twitter"></i> Twitter</p>
+           
+        </div>
+        <div class="footer" id="footer1">
+            <p>
+            <h4>MAKE MONEY WITH US</h4>
+            </p>
+            <p>Sell on luxury watches</p>
+            <p>Protect and Bulid your brand</p>
+            <p>Advertise your product</p>
+        </div>
+        <div class="footer" id="footer1">
+            <p>
+            <h4>LET US HELP YOU</h4>
+            </p>
+            <p>Your account</p>
+            <p>Help</p>
+            <p>100% purchase protection</p>
+            <P> Recalls and Product safety alerts</P>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

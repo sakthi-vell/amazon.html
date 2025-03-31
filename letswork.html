@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form onsubmit="sakthi(event)">
+        <label> username</label>
+        <input type="text"  id="name"><br>
+        <span id="firsterror"></span><br><br>
+
+
+        <label> date of birth</label>
+        <input type="text"  id="date"><br>
+        <span id="secondterror"></span><br><br>
+
+        <label> gender</label>
+        <input type="text"  id="gender"><br>
+        <span id="thirderror"></span><br><br>
+
+
+
+        <label> email</label>
+        <input type="text"  id="email"><br>
+        <span id="fourtherror"></span><br><br>
+
+
+        <!-- <label> mobilenum</label>
+        <input type="text"  id="mobile"><br>
+        <span id="fiftherror"></span><br><br> -->
+
+
+        <label> height</label>
+        <input type="text"  id="height"><br>
+        <span id="sixerror"></span><br><br>
+
+
+        <label> weight</label>
+        <input type="text"  id="weight"><br>
+        <span id="sevenerror"></span><br><br>
+
+
+        <button type="text">sumbit</button>
+    </form>
+    <script>
+        function sakthi(event){
+        event.preventDefault();
+
+
+         let a=["female","male"];
+         let h=150;
+         let w=100;
+
+        let username=document.getElementById("name").value;
+        let dateofbirth=document.getElementById("date").value;
+        let gender=document.getElementById("gender").value;
+        let email=document.getElementById("email").value;
+        // let mobilenum=document.getElementById("mobile").value;
+        let height=document.getElementById("height").value;
+        let weight=document.getElementById("weight").value;
+
+    try{
+        
+        if (username === "" || !/^[A-Z\s]+$/.test(username))
+         { throw "please enter the uppercase only";}
+        if(dateofbirth==="" || !/^[0-9]+$/.test(dateofbirth)){
+            throw "please enter only numbers";}
+    //
+    if(!a.includes(gender)){
+        alert("enter correct gender machi");
+
+        }
+
+ 
+    if(email==" "){
+        throw" please enter the mail id";}
+
+    //   if( mobilenum ===""  || !/^\d{10}+$/ ){
+        //  throw" enter thr mobile in10 digit";
+    //  }
+    if( height<=150){
+         throw" your hight is not enough";
+
+    }
+    if(weight<=100){}
+    else{
+        throw" your weight is over";
+    }
+           
+    
+       alert("form submiited succesfully");}
+catch(error)
+{   
+    alert("Error: " + error);
+    // document.getElementById("nameError").textContent = error.message; 
+}
+    }
+
+    </script>
+</body>
+</html>
