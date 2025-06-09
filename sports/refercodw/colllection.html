@@ -92,28 +92,26 @@
 
 
         .section3 {
-            background-image: url(watchss.webp);
-            
-            height: fit-content;
-            background-size: cover;
-            background-blend-mode: color;
-            background-color: rgba(0, 0, 0, 0.404);
-            display: flex;
-            gap: 7%;
             width: 100%;
+            height: fit-content;
+            background-image: url(watchss.webp);  
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.404);
+            background-blend-mode: color;
+            gap: 0%;
+            display: flex;
+            /* justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid red; */
+          
 
 
         }
 
         .section3>.collection {
-            /* border: 2px solid red; */
-
-            margin-left: 2%;
-            margin-top: 7.5%;
-            justify-content: space-evenly;
-            width: fit-content;
+            border: 2px solid red;
+            width: auto;
             display: grid;
-            background-size: cover;
             grid-template-columns: repeat(4, 1fr);
             
 
@@ -123,15 +121,12 @@
 
         figure {
 
-            width: fit-content;
-            margin: 2%;
-            /* border: 2px solid yellow; */
-
+margin: 5%;
         }
 
         figcaption {
             text-align: center;
-            padding: 2px;
+            /* padding: 2px; */
             color: white;
         }
 
@@ -139,16 +134,17 @@
             width: 185px;
             height: 185px;
             border-radius: 7px;
+            /* border: 2px solid white; */
 
         }
 
-        .video {
+        .sticky{
             /* border: 2px solid green; */
             width: fit-content;
             margin-top: 15%;
-            margin-left: 4%;
+            /* margin-left: 4%; */
             position: sticky;
-            top: 150px;
+            top: 0px;
             height: fit-content;
             z-index: 10;
             /* bottom: 20px; */
@@ -162,7 +158,7 @@
             box-shadow: 0px 0px 10px 5px;
             color: rgb(155, 191, 216);
         }
-
+/* 
 
         .section4 {
             width: 100%;
@@ -190,7 +186,7 @@
             border-radius: 5px;
             border: none;
 
-        }
+        } */
         @media screen and (max-width:768px){
             * {
         padding: 0px;
@@ -558,7 +554,7 @@ width: 35vh;}
 </head>
 
 <body class="proper">
-    <section class="section1">
+    <!-- <section class="section1">
         <ul>
             <a href="index.html">
                 <li class="a1"><span> ✧✦</span> 𝐋𝐔𝐗𝐔𝐑𝐘 𝑾𝑨𝑻𝑪𝑯𝑬𝑺 <span>✦✧</span> </li>
@@ -566,8 +562,7 @@ width: 35vh;}
 
 
             <li class="a2" id="account"> <i class="fa-solid fa-user-plus"></i> ACCOUNT</li>
-            <!-- placeholder="luxury watches.com" -->
-
+        
             <li class="a3"> <input type="text" class=searchbar id="searchInput"><button onclick="sakthi()"
                     style="border: none;"><i class="fa-solid fa-magnifying-glass" id="button">
                     </i></button></li>
@@ -594,7 +589,7 @@ width: 35vh;}
 
         </ul>
 
-    </section>
+    </section> -->
 
     <section class="section3">
         <div class="collection">
@@ -718,14 +713,14 @@ width: 35vh;}
 
 
 
-        <div class="video">
+        <div class="sticky">
             <a href="loginpage.html">
                 <img id="max" src="parts watch.jpg"></a>
 
         </div>
 
     </section>
-    <section class="section4">
+    <!-- <section class="section4">
         <div class="footer" id="footer1">
             <p>
             <h4>GET TO KNOW US</h4>
@@ -760,7 +755,7 @@ width: 35vh;}
             <p>100% purchase protection</p>
             <P> Recalls and Product safety alerts</P>
         </div>
-    </section>
+    </section> -->
 
 
 </body>

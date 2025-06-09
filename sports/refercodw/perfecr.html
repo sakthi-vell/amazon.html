@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HOME PAGE</title>
+    <title> HOME PAGE </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,18 +16,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+        <link rel="stylesheet" href="stylenew.css">
+
+  
 
 </head>
 
 <body>
+
     <nav id="nav1">
 
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><span>✧✦</span> 𝐋𝐔𝐗𝐔𝐑𝐘 𝑾𝑨𝑻𝑪𝑯𝑬𝑺
-                    <span>✦✧</span></a>
+                <a class="navbar-brand" href="#"><span>✧✦</span> 𝐋𝐔𝐗𝐔𝐑𝐘 𝑾𝑨𝑻𝑪𝑯𝑬𝑺 <span>✦✧</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +59,7 @@
                                 LOCATION</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 PRODUCTS
                             </a>
@@ -75,7 +76,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="details.html" tabindex="-1" aria-disabled="true"> <i
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> <i
                                     class="fa-solid fa-cart-shopping"></i> RETURNS & ORDERS</a>
                         </li>
                     </ul>
@@ -85,55 +86,83 @@
         </nav>
     </nav>
 
+    <script>
+        function sakthi() {
+
+            {
+                var a = ["grebul forsey", "breguet", "patekphillipe", "casio", "invicta", "seiko", "exponi", "titan", "hublot", "fastrack", "rolex"];
+                var userInput = document.getElementById("searchInput").value.toLowerCase(); // lowercase nu kudutha small la kuduthalum caps kuduthalumaccept panikom
+
+                if (a.includes(userInput)) {
+                    console.log("It's a correct input");
+                    // document.getElementById("suma").innerHTML = "Valid input: " + userInput ;
+
+                    // Redirect to another page (change 'newpage.html' to your actual page)
+                    window.location.href = "new.html";
+                } else {
+                    console.log("Wrong input");
+                    // document.getElementById("suma").innerHTML = "Invalid input!";
+                    alert(" plese enter the proper brand name");
+                }
+            }
+
+        }
+    </script>
+
+
+
+
+
+
     <section class="section1">
         <div class="container">
-            <a href="product.html">
+            <a href="colllection.html">
                 <div class="smallbox">
-                    <p class="text1"> Mens Watch starting &#x20B9; 30,000 | | </p>
+                    <p class="text1"> Causal Watch Starting &#x20B9; 30,000 | | </p>
                     <p class="text2"> MultiBrand Watches</p>
                     <div>
-                        <img src="asset/men1.webp">
-                        <img src="asset/men2.jpg">
-                        <img src="asset/men3.jpg">
-                        <img src="asset/men4.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts6.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts4.jpg">
                     </div>
                 </div>
             </a>
 
-            <a href="product.html">
+            <a href="colllection.html">
                 <div class="smallbox">
-                    <p class="text1"> Sports Watch Starting &#x20B9; 25,000 | | </p>
+                    <p class="text1"> Causal Watch Starting &#x20B9; 25,000 | | </p>
                     <p class="text2"> MultiBrand Watches</p>
                     <div>
-                        <img src="asset/sprts1.webp">
-                        <img src="asset/sprts2.webp">
-                        <img src="asset/sprts3.jpg">
-                        <img src="asset/sprts4.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts6.jpg">
+                        <img src="sports/sprts6.jpg">
+                        <img src="sprts4.jpg">
                     </div>
                 </div>
             </a>
-            <a href="product.html">
+            <a href="colllection.html">
                 <div class="smallbox">
-                    <p class="text1"> Customize Watch Starting &#x20B9; 25,000 | | </p>
+                    <p class="text1"> Causal Watch Starting &#x20B9; 25,000 | | </p>
                     <p class="text2"> MultiBrand Watches</p>
                     <div>
-                        <img src="asset/customize1.webp">
-                        <img src="asset/cust2.jpg">
-                        <img src="asset/cust3.jpg">
-                        <img src="asset/cust4.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts6.jpg">
+                        <img src="sports/sprts6.jpg">
+                        <img src="sprts4.jpg">
                     </div>
 
                 </div>
             </a>
-            <a href="product.html">
+            <a href="colllection.html">
                 <div class="smallbox">
-                    <p class="text1"> Gps Watch Starting &#x20B9; 25,000 | | </p>
+                    <p class="text1"> Causal Watch Starting &#x20B9; 25,000 | | </p>
                     <p class="text2"> MultiBrand Watches</p>
                     <div>
-                        <img src="asset/gps1.jpg">
-                        <img src="asset/gps2.jpeg">
-                        <img src="asset/gps3.jpeg">
-                        <img src="asset/gps4.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts6.jpg">
+                        <img src="sports/sprts6.jpg">
+                        <img src="sprts4.jpg">
                     </div>
 
                 </div>
@@ -141,40 +170,40 @@
         </div><br><br>
 
         <div class="container">
-            <a href="product.html">
+            <a href="colllection.html">
                 <div class="smallbox">
-                    <p class="text1"> Metal Watch Starting &#x20B9; 30,000 | | </p>
+                    <p class="text1"> Causal Watch Starting &#x20B9; 30,000 | | </p>
                     <p class="text2"> MultiBrand Watches</p>
                     <div>
-                        <img src="asset/metal1.jpeg">
-                        <img src="asset/metal2.jpg">
-                        <img src="asset/metal3.jpg">
-                        <img src="asset/metal4.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts6.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts4.jpg">
                     </div>
                 </div>
             </a>
 
-            <a href="product.html">
+            <a href="colllection.html">
                 <div class="smallbox">
-                    <p class="text1"> Kids Watch Starting &#x20B9; 25,000 | | </p>
+                    <p class="text1"> Causal Watch Starting &#x20B9; 25,000 | | </p>
                     <p class="text2"> MultiBrand Watches</p>
                     <div>
-                        <img src="asset/men1.webp">
-                        <img src="asset/men2.jpg">
-                        <img src="asset/men3.jpg">
-                        <img src="asset/men4.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts6.jpg">
+                        <img src="sports/sprts6.jpg">
+                        <img src="sprts4.jpg">
                     </div>
                 </div>
             </a>
-            <a href="product.html">
+            <a href="colllection.html">
                 <div class="smallbox">
-                    <p class="text1"> Womens Watch Starting &#x20B9; 25,000 | | </p>
+                    <p class="text1"> Causal Watch Starting &#x20B9; 25,000 | | </p>
                     <p class="text2"> MultiBrand Watches</p>
                     <div>
-                        <img src="asset/women1.jpg">
-                        <img src="asset/women2 (2).jpg">
-                        <img src="asset/women3.webp">
-                        <img src="asset/women4.jpg">
+                        <img src="sprts3.webp">
+                        <img src="sprts6.jpg">
+                        <img src="sports/sprts6.jpg">
+                        <img src="sprts4.jpg">
                     </div>
 
                 </div>
@@ -184,18 +213,17 @@
 
         <div class="silder">
             <marquee behaviour="alternative" direction="left">
-                <img class="silderimg" src="asset/gps1.jpg">
-                <img class="silderimg" src="asset/gps2.jpeg">
-                <img class="silderimg" src="asset/men2.jpg">
-                <img class="silderimg" src="asset/cust4.jpg">
-                <img class="silderimg" src="asset/cust2.jpg">
-                <img class="silderimg" src="asset/metal2.jpg">
-                <img class="silderimg" src="asset/sprts4.jpg">
-                <img class="silderimg" src="asset/women4.jpg">
+                <img class="silderimg" src="watch1.img">
+                <img class="silderimg" src="watch2.img">
+                <img class="silderimg" src="watch11.jpg">
+                <img class="silderimg" src="watch13.jpg">
+                <img class="silderimg" src="watch14.avif">
+                <img class="silderimg" src="watch15bulgari.jpg">
+                <img class="silderimg" src="watch16.avif">
+                <img class="silderimg" src="watch18.jpg">
             </marquee>
         </div><br><br>
-    </section>
-
+    </section><br>
     <footer>
 
         <ul>
@@ -228,7 +256,6 @@
         </ul>
 
     </footer>
-
 </body>
 
 </html>

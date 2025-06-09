@@ -8,11 +8,11 @@ function sakthi() {
         // document.getElementById("suma").innerHTML = "Valid input: " + userInput ;
 
         // Redirect to another page (change 'newpage.html' to your actual page)
-        window.location.href = "colllection.html";
+        window.location.href = "details.html";
     } else {
         console.log("Wrong input");
         // document.getElementById("suma").innerHTML = "Invalid input!";
-        alert( " plese enter the proper brand name");
+        alert(" plese enter the proper brand name");
     }
 }
 

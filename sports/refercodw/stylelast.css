@@ -60,7 +60,7 @@ li {
     padding: 2px 2px;
 }
 
-a {
+/* a {
     text-decoration: none;
     color: white;
 }
@@ -79,16 +79,16 @@ a {
 
 .a4:hover .dropdown {
     display: block;
-}
+} */
 
 
-.section3 {
+#login-sec1 {
     background-image: url(watchss.webp);
     width: 100%;
     height: fit-content;
     background-size: cover;
     background-blend-mode: color;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.329);
     display: flex;
     padding-top: 5%;
     /* gap: 5%; */
@@ -154,7 +154,7 @@ img {
 
 
 
-
+/* 
 .section4 {
     width: 100%;
     height: fit-content;
@@ -180,7 +180,7 @@ p {
     padding: 3px;
     border-radius: 5px;
     border: none;
-}
+} */
 
 /* jechsbcjhrbhjrbdjhrfbhdb */
 

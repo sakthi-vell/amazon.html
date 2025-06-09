@@ -1,115 +1,180 @@
-* {
-    padding: 0px;
-    margin: 0px;
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+   
 }
 
-.section1 {
+
+/* nav bar common for pages///////////////////////////////// */
+
+#nav1>.navbar {
+    padding: 20px 0px 20px 0px;
+    background-color: #1b2838;
+
+}
+
+#nav1 {
     position: sticky;
     top: 0;
-    background-color: #1b2838;
+    scroll-behavior: smooth;
+    z-index: 1000;
 }
 
 
-ul {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
+.navbar-brand {
+    margin-left: 1rem;
+    padding: 10px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+
 }
 
-li {
+.container-fluid :hover {
+    color: white;
+}
+
+
+.navbar-nav {
+    margin-left: 3rem;
+    gap: 1.5rem;
     color: white;
 
+
 }
 
-.a1 {
-    font-size: 21px;
+.navbar-nav>.nav-item>a {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.a2 {
-    font-size: 15px;
-}
 
-.a3 {
+.d-flex {
+
     background-color: white;
-    border-radius: 7px;
-    padding: 3px 3px;
+    border-radius: 15px;
+    padding: 0px 10px 0px 5px;
+    width: fit-content;
+    margin-left: 3rem;
 
 }
 
-.searchbar {
+#searchInput {
     border: none;
-    outline: none;
-    width: 240px;
+    box-shadow: none;
+    border-radius: 25px;
+}
+
+#searchInput:hover {
+    box-shadow: none;
+
+
+}
+
+button {
+    background: transparent;
 
 }
 
 
+#accountul {
+    margin-left: 2rem;
 
-.a4 {
-    /* border: 2px solid white; */
-    padding: 2px 2px;
 }
 
-a {
-    text-decoration: none;
+.dropdown-toggle :hover::after {
     color: white;
+
 }
 
-.section2>.ul2 {
-    background-color: #2a475e;
-    height: 50px;
-    width: 100%;
+.navbar-toggler {
+    background-color: white;
+}
+
+
+
+/* footer common for all pages ///////////////////////////////////////////////////// */
+footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    list-style-type: none;
+    background-color: #1b2838;
+    height: fit-content;
+    width: 100%;
+    padding: 40px 0px 10px 0px;
 
 }
 
-.dropdown,
-.drop {
-    display: none;
-    border: none;
+
+
+footer>ul {
+
+    height: 13rem;
+
+
+}
+
+footer>ul>li {
     color: white;
-    position: absolute;
+    line-height: 40px;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
 }
 
-.a4:hover .dropdown {
-    display: block;
+footer>ul>h4 {
+    color: bisque;
+    text-align: center;
+
 }
 
-.dropdown2:hover .drop {
-    display: block;
-}
+/* common section finish gbdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
 
-.section3 {
-    background-image: url(watchss.webp);
+
+/* homepagehgjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+
+/* sec1 */
+.section1 {
+    background-image: url(asset/customize1.webp);
     width: 100%;
     height: fit-content;
     background-size: cover;
-    background-blend-mode: color;
     padding-top: 6%;
-    justify-items: center;
+    background-position: center;
 }
 
-.section3>.container {
+.section1>.container {
     width: 97%;
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 2px solid red;  */
 }
 
-.section3>.container>a>.smallbox {
+.section1>.container>a>.smallbox {
     border-radius: 9px;
-    box-shadow: 15px 15px 15px 15px;
+    padding: 15px 5px 0px 5px;
+    box-shadow: 15px 15px 15px;
     color: rgba(0, 0, 0, 0.527);
     background-color: rgb(179, 169, 169);
     width: fit-content;
+    height: fit-content;
+    place-items: center;
+}
+
+
+
+.section1>.container>a>.smallbox>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.section1>.container>a {
+    text-decoration: none;
 }
 
 img {
@@ -117,6 +182,7 @@ img {
     height: 80px;
     border-radius: 10px;
     margin: 18px;
+    background-size: cover;
 
 }
 
@@ -124,377 +190,607 @@ img {
 .text2 {
     color: rgb(10, 10, 10);
     font-size: 15px;
-    padding: 10px;
 
 }
 
+
+/* slider */
 .silder {
-    /* border: 2px solid red; */
-    width: 97%;
+    width: 100%;
     height: fit-content;
+
 
 }
 
 .silderimg {
-    height: 190px;
+    height: 180px;
     width: 190px;
-}
-
-
-.section4 {
-    width: 100%;
-    height: fit-content;
-    margin: auto;
-    display: flex;
-    background-color: #1b2838;
-    justify-content: space-evenly;
-
+    background-size: cover;
+    border: 2px solid white;
 
 }
 
-h4 {
-    color: bisque;
-    text-align: center;
-}
+/* products page  eeeghjgheyrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
 
-p {
-    padding: 10px;
-    text-align: center;
-    color: white;
-}
-.section1> ul>.a4>button{
-    padding: 3px;
-    border-radius: 5px;
-    border: none;}
+        #cltion-sec-1 {
+            width: 100%;
+            height: fit-content;
+            background-image: url(asset/customize1.webp);
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.541);
+            background-blend-mode: color;
+            place-items: center;
 
 
-@media screen and (max-width:768px) {
-    * {
-        padding: 0px;
-        margin: 0px;
+        }
+
+        .maindiv {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 99%;
+            padding-top: 10%;
+
+        }
+
+        .subdiv1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            place-items: center;
+            column-gap: 20px;
+            row-gap: 20px;
+            padding: 10px 0px 30px 10px;
+
+        }
+
+
+        .subdiv1 div {
+
+            width: fit-content;
+            height: fit-content;
+            text-align: center;
+            line-height: 10px;
+
+
+
+
+        }
+
+        .subdiv1 div>a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        .subdiv1 div>a>p {
+
+            padding: 10px 0px 0px 0px;
+        }
+
+        .cltion-sec1-img {
+            width: 185px;
+            height: 185px;
+            border-radius: 7px;
+        }
+
+        .subdiv2 {
+            height: fit-content;
+            width: fit-content;
+            position: sticky;
+            top: 1rem;
+            margin-top: -55rem;
+
+        }
+
+        #subdiv2-img {
+            height: 45vh;
+            border-radius: 10px;
+            box-shadow: 4px 6px 8px;
+            color: rgb(155, 191, 216);
+            width: 45vh;
+        }
+
+
+
+        /* buy page start aaguthu///////////////////////////////////////////// */
+
+           #login-sec1 {
+            background-image: url(asset/customize1.webp);
+            width: 100%;
+            height: fit-content;
+            background-size: cover;
+            background-blend-mode: color;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.555);
+            padding-top: 5%;
+
+
+        }
+
+
+
+        .login-sec1-subdiv {
+            height: fit-content;
+            width: fit-content;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 4rem;
+            padding: 5px;
+            gap: 4rem;
+
+
+
+        }
+
+        .login-sec1-subdiv div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .login-sec1-subdiv>div>.figure>figcaption {
+            color: white;
+            font-size: 18px;
+        }
+
+
+        .login-sec1-subdiv>div>img {
+            border-radius: 10px;
+            height: 220px;
+            width: 220px;
+
+        }
+
+
+        #buy-add-div {
+            height: fit-content;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+
+
+
+        }
+
+        #buy-add-div>button {
+            margin: 4px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: bisque;
+
+        }
+
+
+
+
+
+
+
+@media(max-width:768px) and (min-width:568px) {
+    /* nabbarhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
+    #accountul {
+        display: none;
     }
 
-    .a1 {
-        font-size: 13px;
-    }
-
-    .a2 {
-        font-size: 9px;
-    }
-
-    .a3 {
-        background-color: white;
-        border-radius: 7px;
-        padding: 3px 3px;
-    }
-
-    .searchbar {
-        border: none;
-        outline: none;
-        width: 150px;
+    .d-flex {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 20px;
 
     }
 
-    .a4 {
-        /* border: 2px solid red; */
-        padding: 1px 1px;
+    /* footervhfjrdbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbv */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        padding: 20px 0px 20px 0px;
+
     }
 
-    .section2>.ul2>li {
+    footer>ul {
 
-        font-size: 10px;
+        height: 10rem;
     }
 
-    .section3>.container {
-        /* border: 2px solid red; */
+
+    footer>ul>li {
+
+        line-height: 30px;
+        font-size: 16px;
+
+    }
+
+    footer>ul>h4 {
+        font-size: 18px;
+
+    }
+
+    /* homepagehbjnjdvfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff */
+
+    .section1 {
+        padding-top: 13%;
+    }
+
+    .section1>.container {
+        width: 97%;
         height: fit-content;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 95%;
         place-items: center;
+        row-gap: 2rem;
+        column-gap: 30px;
     }
 
-    .section3>.container>a>.smallbox {
+    /* product pagejknfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff */
 
-        margin: 10px;
+
+    
+            .subdiv1 {
+                width: 99%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                place-items: center;
+                column-gap: 5px;
+                row-gap: 0px;
+                padding: 10px 0px 30px 0px;
+                
+
+            }
+
+
+            .subdiv1 div {
+
+                width: fit-content;
+                height: fit-content;
+                text-align: center;
+                line-height: 6px;
+
+
+
+
+            }
+
+            .subdiv1 div>a {
+                text-decoration: none;
+                color: white;
+
+
+            }
+
+            .subdiv1 div>a>p {
+
+                padding: 10px 0px 0px 0px;
+                font-size: 14px;
+            }
+
+            .cltion-sec1-img {
+                width: 145px;
+                height: 145px;
+                border-radius: 7px;
+            }
+
+            .subdiv2 {
+             display: none;
+
+
+
+
+            }
+
+            /* bug pages///////////////////////////////// */
+              .login-sec1-subdiv {
+
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                place-items: center;
+                margin-left: 4rem;
+                padding: 5px;
+                gap: 1rem;
+                margin-left: 2rem;
+                width: 90%;
+
+
+
+            }
+
+              .login-sec1-subdiv>div{
+                gap: 15px;
+              }
+
+
+
+
+            .login-sec1-subdiv>div>.figure>figcaption {
+                color: white;
+                font-size: 16px;
+            }
+
+
+            .login-sec1-subdiv>div>img {
+                border-radius: 10px;
+                height: 175px;
+                width: 175px;
+
+            }
+
+
+            #buy-add-div {
+
+                padding: 0px;
+                margin: 0px;
+                gap: 5px;
+                display: flex;
+                flex-direction: row;
+                margin-left: 8rem;
+
+
+
+            }
+
+            #buy-add-div>button {
+
+                padding: 10px;
+                font-size: 12px;
+
+
+            }
+
+}
+
+
+@media(max-width:568px) and (min-width:310px) {
+
+    .navbar-brand {
+        margin-left: 0px;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+
     }
 
-    img {
-        width: 70px;
-        height: 70px;
+    #accountul {
+        display: none;
+    }
+
+    .d-flex {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 20px;
+
 
     }
 
-    .text1,
-    .text2 {
-        color: rgb(10, 10, 10);
-        font-size: 13px;
-        padding: 7.5px;
+
+    /* footer gggggggggggggggggggggc */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        padding: 20px 0px 20px 0px;
+
     }
 
-    .silder {
-        /* border: 2px solid red; */
-        /* margin-top: 60px; */
-        margin-bottom: 0px;
 
+    footer>ul {
+        height: 7rem;
+        margin-left: -2.5rem;
+
+
+    }
+
+    footer>ul>li {
+        line-height: 25px;
+        font-size: 12px;
+
+    }
+
+    footer>ul>h4 {
+        font-size: 14px;
+
+    }
+
+
+    /* home pagenhvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+    .section1>.container {
+        width: 97%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        row-gap: 1rem;
+    }
+
+    .section1 {
+        padding-top: 15%;
     }
 
     .silderimg {
-        height: 150px;
-        width: 150px;
-    }
-
-    h4 {
-        font-size: 13px;
-    }
-
-    p {
-        padding: 5px;
-        font-size: 11px;
-    }
-}
-
-
-@media screen and (max-width:710px) {
-
-    .a4 {
-        display: none;
-    }
-}
-
-@media screen and (max-width:630px) {
-
-    .a4,
-    #aa2 {
-        display: none;
-    }
-}
-
-
-
-
-@media screen and (max-width:578px) {
-
-    #aa2,
-    .a4,
-    .suma {
-        display: none;
-
-    }
-
-    .a3 {
-        background-color: white;
-        border-radius: 7px;
-        padding: 1px 1px;
-        width: 100px;
-    }
-
-    .searchbar {
-        border: none;
-        outline: none;
-        width: 80px;
-
-    }
-
-    button>.fa-solidfa-magnifying-glass {
-        /* border: none; */
-        width: 30px;
-    }
-
-    .a1 {
-        font-size: 12px;
-    }
-
-    .a2 {
-        font-size: 9px;
-    }
-
-    .section2>.ul2 {
-        /* font-size: 15px; */
-        background-color: #2a475e;
-        height: 45px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style-type: none;
-    }
-
-    .section2>.ul2>li {
-        font-size: 10px;
+        height: 140px;
+        width: 140px;
 
 
     }
 
-
-    .section1 {
-        position: sticky;
-        top: 0;
-        background-color: #1b2838;
-    }
-
-    ul {
-        width: 100%;
-        height: 70px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style-type: none;
-    }
-
-    .dropdown,
-    .drop {
-        display: none;
-        border: none;
-        color: white;
-        position: absolute;
-    }
+    /* collection page bferhjgeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 
-    .section3 {
-        background-image: url(watchss.webp);
-
-        height: fit-content;
-        background-size: cover;
-        background-blend-mode: color;
-        background-color: rgba(0, 0, 0, 0.404);
-        padding-top: 5%;
-    }
-
-    .section3>.container {
-        /* border: 2px solid red; */
-        height: fit-content;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 95%;
-        place-items: center;
-
-    }
-
-    .container>a>.smallbox>img {
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-
-    }
-
-    .section3>.container>a>.smallbox {
-        width: fit-content;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 10px;
-
-    }
-
-    .text1,
-    .text2 {
-        font-size: 9px;
-        padding: 5px;
-        /* font-style: none; */
-    }
-
-    .silder {
-        margin: 8px;
-    }
-
-    .silder>marquee>.silderimg {
-        width: 125px;
-        height: 125px;
-
-    }
-
-    .section4 {
-        width: 100%;
-        height: fit-content;
-        margin: auto;
-        display: grid;
-        background-color: #1b2838;
-        justify-content: space-evenly;
-        grid-template-columns: repeat(2, 1fr);
 
 
-    }
 
-    #footer1
-            {
 
-                margin: 3%;
+    .subdiv1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                place-items: center;
+                column-gap: -10px;
+                row-gap: 0px;
+                width: 90%;
+               padding: 10px 0px 30px 0px;
+            
+
             }
 
-            h4 {
-                color: bisque;
+
+            .subdiv1 div {
+
+                width: fit-content;
+                height: fit-content;
                 text-align: center;
+                line-height: 6px;
+
+
+
+
+            }
+
+            .subdiv1 div>a {
+                text-decoration: none;
+                color: white;
+
+
+            }
+
+            .subdiv1 div>a>p {
+
+                padding: 10px 0px 0px 0px;
                 font-size: 12px;
             }
 
-            p {
-                padding: 7px;
-                font-size: 10px;
-            } 
+            .cltion-sec1-img {
+                width: 130px;
+                height: 130px;
+                border-radius: 7px;
+            }
+
+            .subdiv2 {
+             display: none;
+            }
+
+
+            /* buy pages///////////////////////////////////////////// */
+
+                #login-sec1 {
+                place-items: center;
+            }
+
+            .login-sec1-subdiv {
+
+
+                padding: 5px;
+                gap: 1rem;
+                margin-left: 0rem;
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+
+            }
+
+            .login-sec1-subdiv div {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+
+            }
+
+           .figure {
+
+                margin-left: 0px;
+            }
+
+
+
+
+            .login-sec1-subdiv>div>.figure>figcaption {
+                color: white;
+                font-size: 16px;
+            }
+
+
+            .login-sec1-subdiv>div>img {
+                border-radius: 10px;
+                height: 175px;
+                width: 175px;
+
+            }
+
+
+            #buy-add-div {
+                gap: 5px;
+                display: flex;
+                flex-direction: row;
+                margin-left: 0rem;
+
+            }
+
+            #buy-add-div>button {
+
+                padding: 10px;
+                font-size: 11px;
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
-@media screen and (max-width:520px) {
-    .a1 {
-        font-size: 11px;
+@media screen and (max-width:400px) {
+
+
+    .navbar-brand {
+        margin-left: 0px;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+
     }
 
-    .a2 {
-        font-size: 8px;
+    .subdiv1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        column-gap: 0px;
+        row-gap: 10px;
+        width: 98%;
+        padding: 0px 0px 0px 0px;
+
     }
 
-    .silder {
-        margin: 7.5px;
+    .cltion-sec1-img {
+        width: 117px;
+        height: 117px;
+
     }
 
-   
-}
 
-@media screen and (max-width:455px) {
-    .a1 {
-        font-size: 10px;
+    .subdiv1 div>a>p {
+
+        padding: 10px 0px 0px 0px;
+        font-size: 11.5px;
+        line-height: 0px;
     }
 
-    .a2 {
-        font-size: 7.5px;
-    }
-
-    .section2>.ul2>li {
-        font-size: 7.5px;
-    }
-
-    .silder {
-        margin: 7.5px;
-    }
-
- 
-}
 
 
-@media screen and (max-width:425px) {
-
-    #a21,
-    span {
-        display: none;
-    }
-
-  
-
-    .silder {
-        margin: 7px;
-    }
-
-  
-}
-
-@media screen and (max-width:390px) {
-    .section2>.ul2>li {
-        font-size: 7px;
-    }
-
-    .silder {
-        margin: 7px;
-    }
-
-  
 }

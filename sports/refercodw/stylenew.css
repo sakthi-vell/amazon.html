@@ -1,0 +1,718 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+
+#nav1>.navbar {
+    padding: 20px 0px 20px 0px;
+    background-color: #1b2838;
+
+}
+
+#nav1 {
+    position: sticky;
+    top: 0;
+    scroll-behavior: smooth;
+    z-index: 1000;
+}
+
+
+.navbar-brand {
+    margin-left: 1rem;
+    padding: 10px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+
+}
+
+.container-fluid :hover {
+    color: white;
+}
+
+
+
+.navbar-nav {
+    margin-left: 3rem;
+    gap: 1.5rem;
+    color: white;
+
+
+}
+
+.navbar-nav>.nav-item>a {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.d-flex {
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px 10px 0px 5px;
+    width: fit-content;
+    margin-left: 3rem;
+
+}
+
+#searchInput {
+    border: none;
+    box-shadow: none;
+    border-radius: 25px;
+}
+
+#searchInput:hover {
+    box-shadow: none;
+
+
+}
+
+button {
+    background: transparent;
+
+}
+
+
+#accountul {
+    margin-left: 2rem;
+
+}
+
+.dropdown-toggle :hover::after {
+    color: white;
+
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1b2838;
+    height: fit-content;
+    width: 100%;
+    padding: 40px 0px 10px 0px;
+
+}
+
+
+
+footer>ul {
+
+    height: 13rem;
+
+
+}
+
+footer>ul>li {
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer>ul>h4 {
+    color: bisque;
+    text-align: center;
+
+}
+
+
+/* index.htmkl */
+
+/* sec1 */
+.section1 {
+    background-image: url(watchss.webp);
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    padding-top: 6%;
+    background-position: center;
+}
+
+.section1>.container {
+    width: 97%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section1>.container>a>.smallbox {
+    border-radius: 9px;
+    padding: 15px 5px 0px 5px;
+    box-shadow: 15px 15px 15px;
+    color: rgba(0, 0, 0, 0.527);
+    background-color: rgb(179, 169, 169);
+    width: fit-content;
+    height: fit-content;
+    place-items: center;
+}
+
+
+
+.section1>.container>a>.smallbox>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.section1>.container>a {
+    text-decoration: none;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 18px;
+
+}
+
+.text1,
+.text2 {
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+
+}
+
+
+/* slider */
+.silder {
+
+    width: 100%;
+    height: fit-content;
+
+
+}
+
+.silderimg {
+    height: 180px;
+    width: 190px;
+    background-size: cover;
+    border: 2px solid white;
+
+}
+
+
+/* collection .html */
+
+#cltion-sec-1 {
+    width: 100%;
+    height: fit-content;
+    background-image: url(watchss.webp);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.541);
+    background-blend-mode: color;
+    place-items: center;
+
+
+}
+
+.maindiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 99%;
+    padding-top: 10%;
+
+}
+
+.subdiv1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    column-gap: 10px;
+    padding: 10px 0px 30px 10px;
+
+
+
+
+}
+
+
+.subdiv1 div {
+
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    line-height: 10px;
+
+
+}
+
+.subdiv1 div>a {
+    text-decoration: none;
+    color: white;
+}
+
+.cltion-sec1-img {
+    width: 185px;
+    height: 185px;
+    border-radius: 7px;
+}
+
+.subdiv2 {
+    height: fit-content;
+    width: fit-content;
+    position: sticky;
+    top: 1rem;
+    margin-top: -55rem;
+
+
+
+
+}
+
+#subdiv2-img {
+    height: 45vh;
+    border-radius: 10px;
+    box-shadow: 4px 6px 8px;
+    color: rgb(155, 191, 216);
+    width: 45vh;
+}
+
+/* login.html */
+
+
+
+#login-sec1 {
+    background-image: url(watchss.webp);
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-blend-mode: color;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding-top: 10%;
+
+
+}
+
+
+
+.login-sec1-subdiv {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 4rem;
+    padding: 5px;
+    gap: 4rem;
+
+
+
+}
+
+.login-sec1-subdiv div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.login-sec1-subdiv>div>.figure>figcaption {
+    color: white;
+    font-size: 18px;
+}
+
+
+.login-sec1-subdiv>div>img {
+    border-radius: 10px;
+    height: 220px;
+    width: 220px;
+
+}
+
+
+#buy-add-div {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+
+
+}
+
+#buy-add-div>button {
+    margin: 4px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: bisque;
+
+}
+
+
+
+
+
+
+@media(max-width:768px) and (min-width:568px) {
+
+
+    #accountul {
+        display: none;
+    }
+
+    .d-flex {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 20px;
+
+    }
+
+    .section1 {
+        padding-top: 13%;
+    }
+
+    .section1>.container {
+        width: 97%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        row-gap: 2rem;
+    }
+
+    /* collection */
+    .subdiv2 {
+        display: none;
+    }
+
+    .subdiv1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        column-gap: 0px;
+        row-gap: 0px;
+        padding: 0px;
+        margin-top: 0%;
+
+
+
+
+    }
+
+    .cltion-sec1-img {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    figcaption {
+        font-size: 14px;
+
+    }
+
+
+
+    /* login */
+    .login-sec1-subdiv {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        margin-left: 4rem;
+        padding: 5px;
+        gap: 1rem;
+        margin-left: 2rem;
+        width: 90%;
+
+
+
+    }
+
+
+
+
+    .login-sec1-subdiv>div>.figure>figcaption {
+        color: white;
+        font-size: 16px;
+    }
+
+
+    .login-sec1-subdiv>div>img {
+        border-radius: 10px;
+        height: 175px;
+        width: 175px;
+
+    }
+
+
+    #buy-add-div {
+
+        padding: 0px;
+        margin: 0px;
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 8rem;
+
+
+
+    }
+
+    #buy-add-div>button {
+
+        padding: 10px;
+        font-size: 12px;
+
+
+    }
+
+
+
+    /* footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        padding: 20px 0px 20px 0px;
+
+    }
+
+    footer>ul {
+
+        height: 10rem;
+    }
+
+
+    footer>ul>li {
+
+        line-height: 30px;
+        font-size: 16px;
+
+    }
+
+    footer>ul>h4 {
+        font-size: 18px;
+
+    }
+
+
+
+
+
+
+
+}
+
+@media(max-width:568px) and (min-width:310px) {
+
+    .navbar-brand {
+        margin-left: 0px;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    #accountul {
+        display: none;
+    }
+
+    .d-flex {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 20px;
+
+
+    }
+
+    .section1>.container {
+        width: 97%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        row-gap: 1rem;
+    }
+
+    .silderimg {
+        height: 140px;
+        width: 140px;
+
+
+    }
+
+
+    /* cltion */
+    .subdiv2 {
+        display: none;
+    }
+
+    .subdiv1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        column-gap: 15px;
+        row-gap: 10px;
+        padding: 0px 10px 0px 10px;
+        margin-top: 0%;
+        margin-left: -0.5rem;
+
+    }
+
+    .cltion-sec1-img {
+        width: 140px;
+        height: 140px;
+
+    }
+
+    figcaption {
+        font-size: 14px;
+
+    }
+
+
+    /* login */
+    #login-sec1 {
+        place-items: center;
+    }
+
+    .login-sec1-subdiv {
+
+
+        padding: 5px;
+        gap: 1rem;
+        margin-left: 0rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .login-sec1-subdiv div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .figure {
+
+        margin-left: 0px;
+    }
+
+
+
+
+    .login-sec1-subdiv>div>.figure>figcaption {
+        color: white;
+        font-size: 16px;
+    }
+
+
+    .login-sec1-subdiv>div>img {
+        border-radius: 10px;
+        height: 175px;
+        width: 175px;
+
+    }
+
+
+    #buy-add-div {
+        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0rem;
+
+    }
+
+    #buy-add-div>button {
+
+        padding: 10px;
+        font-size: 11px;
+
+
+    }
+
+
+
+    /* footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        padding: 20px 0px 20px 0px;
+
+    }
+
+
+    footer>ul {
+        height: 7rem;
+        margin-left: -2.5rem;
+
+
+    }
+
+    footer>ul>li {
+        line-height: 25px;
+        font-size: 12px;
+
+    }
+
+    footer>ul>h4 {
+        font-size: 14px;
+
+    }
+
+    .section1 {
+        padding-top: 15%;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width:400px) {
+
+
+    .navbar-brand {
+        margin-left: 0px;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .subdiv1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        column-gap: 0px;
+        row-gap: 10px;
+        width: 98%;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    .cltion-sec1-img {
+        width: 117px;
+        height: 117px;
+
+    }
+
+    figcaption {
+        font-size: 11px;
+
+
+    }
+
+}
